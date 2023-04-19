@@ -7,3 +7,8 @@ CREATE table stud
  age tinyint check (age >=18),
  ststus boolean default 1
 )
+
+insert into stud
+(id,name,email,age)
+-- values(2,"harry","harry@gmail.com",22)
+values(3,"jojo","jojo@gmail.com",19)
