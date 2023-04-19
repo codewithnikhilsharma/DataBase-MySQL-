@@ -1,0 +1,26 @@
+
+CREATE TABLE hello
+(
+id int unsigned,
+name varchar(100),
+email varchar(150),
+contact varchar(15),
+address text,
+dob date,
+age int,
+gender enum("M" , "F" , "0"),
+status boolean
+)
+
+insert into hello values
+(1,"Nikhil","nikhilsharmanikk53@gmail.com","9518147923" , "Haryana" , "2001-01-10","22", "M",1 ),
+(2,"Parry","parryelis@gmail.com","678247923" , "punjab" , "2002-01-10","20", "M",0 ),
+(3,"Sara","tendous@gmail.com","999981423" , "delhi" , "2003-01-10","18", "f",1 ),
+(4,"Cook","cooktim@gmail.com","89718147923" , "austrilia" , "2004-01-10","19", "M",0 )
+(5,"pointing","pointing@gmail.com","992928929","london","2002-01-10","23","M",0)
+
+// using and or not
+select * FROM hello 
+where age >=18 AND age <=25 AND gender = "M"
+where age <=18  or gender = "F"
+where Not address = "delhi" and not address = "punjab"
